@@ -16,8 +16,8 @@
     background-position: center;                
 }
 
-nav{
-    display:flex;
+nav {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 30px;
@@ -25,21 +25,36 @@ nav{
     padding-top: 30px;
 }
 
-.portfolio{
+.portfolio-box {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio {
     color: #ffff;
-    font-size: 45px;
+    font-size: 35px;
+    font-weight: 1000;
+    margin-left: 10px; /* Adicione margem para separar o texto do avatar */
+
+}
+
+.portfolio span {
+    color: #4bbeac;
     font-weight: 1000;
 }
 
-.portfolio span{
-    color: #4bbeac;
-    font-weight: 1000;
+/* Adicione estilos ao avatar conforme necessário */
+.portfolio-box img {
+    width: 50px; /* Defina a largura do avatar conforme necessário */
+    border-radius: 30%; /* Se quiser um avatar redondo */
+    margin-right: 10px; /* Adicione margem à direita do avatar */
+    margin-top: -20px;
 }
 
 li{
     list-style: none;
     display: inline-block;
-    font-size: 28px;
+    font-size: 20px;
     margin-right: 20px;
     cursor: pointer;
     border-radius: 7px;
@@ -60,10 +75,11 @@ li:hover{
     top: 50%;
     left: 6%;
     color: #ffff;
+    margin-top: -30px;
 }
 
 .my-name h1{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 900;
 }
 
@@ -71,9 +87,78 @@ li:hover{
     color: #4bbeac;
     font-weight: 900;
 }
-
-.my-name h3{
-    font-size: 40px;
+.name-box {
+    font-size: 35px;
     margin-left: 2%;
     margin-top: 2%;
+    display: inline-block;
+}
+
+.name-box h3 {
+    display: inline-block;
+    vertical-align: middle; 
+    margin-right: 1px;  
+    margin-top: 5px;  
+}
+
+.name-box img {
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+section{
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: black;
+}
+
+section img{
+    width: 400px;
+    border-radius: 100%;
+    box-shadow: rgba(75, 190, 172, 0.4) 0px 8px 24px;
+}
+
+section div h2{
+    color: #4bbeac;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+section div p{
+    color: white;
+
+}
+
+.sobremim-box{
+    padding: 15px;
+    margin-left: 190px;
+}
+
+.sobremim-box p{
+    width: 390px;
+    margin-top: 10PX;
+
+}
+
+.sobremim-box button{
+    color: white;
+    background-color: #4bbeac;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid #4bbeac;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sobremim-box button:hover{
+    color:#4bbeac;
+    background-color: #000000;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid #4bbeac;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
 }
